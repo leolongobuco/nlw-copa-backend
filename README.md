@@ -14,7 +14,7 @@ A parte mobile é onde estão todas as funcionalidades principais, nela é poss�
 
 # Tecnologias utilizadas
 
-## Back end
+## Backend
 
 - NodeJS
 - TypeScript
@@ -30,7 +30,7 @@ A parte mobile é onde estão todas as funcionalidades principais, nela é poss�
 # clonar repositório
 git clone https://github.com/leolongobuco/nlw-copa-backend
 
-# entrar na pasta do projeto back end
+# entrar na pasta do projeto backend
 cd backend-nlw-copa
 
 # instalar dependências
