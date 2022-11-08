@@ -1,3 +1,4 @@
+import dotenv from "dotenv";
 import Fastify from "fastify";
 import cors from "@fastify/cors";
 import jwt from "@fastify/jwt";
@@ -7,6 +8,8 @@ import { userRoutes } from "./routes/user";
 import { guessRoutes } from "./routes/guess";
 import { gameRoutes } from "./routes/game";
 import { authRoutes } from "./routes/auth";
+
+dotenv.config();
 
 async function bootstrap() {
   const fastify = Fastify({
@@ -18,7 +21,7 @@ async function bootstrap() {
   });
 
   await fastify.register(jwt, {
-    secret: "nlwcopa",
+    secret: process.env.SECRET_JWT as string,
   });
 
   await fastify.register(poolRoutes);
